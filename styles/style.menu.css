@@ -1,0 +1,95 @@
+/* Background image */
+html { 
+    background: url(https://assets.teenvogue.com/photos/5922efec34530e0a45f5dae4/16:9/w_2560%2Cc_limit/GettyImages-490267007.jpg) no-repeat 
+      center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    font-size: 16px;
+    background-color: transparent;
+
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+a {
+    font-size: 36px;
+    text-decoration: none;
+    color: rgb(255, 234, 0);
+    font-style: italic;
+}
+
+a:last-child {
+    font-size: 36px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(251, 255, 0);
+}
+
+.card-columns {
+    column-count: 3;
+}
+
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Responsive aspect */
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 45px;
+    }
+    p {
+        font-size: 35px;
+    }
+    nav {
+        flex-direction: row;
+    }
+    a {
+        font-size: 24px;
+    }
+    a:last-child {
+        font-size: 24px;
+    }
+}

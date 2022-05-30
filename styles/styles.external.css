@@ -1,0 +1,131 @@
+html, body { 
+  background: url(https://www.luxuryrestaurantawards.com/wp-content/uploads/sites/9/2020/02/JW_ISTJB_Octo-scaled.jpg) no-repeat 
+    center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    font-size: 16px;
+    background-color: transparent;
+
+    overflow: hidden;
+}
+
+p {
+  font-size: 26px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+
+a {
+    font-size: 36px;
+    text-decoration: none;
+    color: rgb(255, 234, 0);
+    font-style: italic;
+}
+
+a:last-child {
+    font-size: 36px;
+    text-decoration: none;
+    color: rgb(255, 234, 0);
+    font-style: italic;
+}
+
+a:hover {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(251, 255, 0);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    p {
+      font-size: 4px;
+    }
+  }
+
+
+/* Responsive aspect */
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 45px;
+    }
+    p {
+        font-size: 35px;
+    }
+    nav {
+        flex-direction: row;
+    }
+    a {
+        font-size: 24px;
+    }
+    a:last-child {
+        font-size: 24px;
+    }
+}

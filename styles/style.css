@@ -1,0 +1,116 @@
+/* Background image */
+html, body { 
+    background: url(https://www.luxuryrestaurantawards.com/wp-content/uploads/sites/9/2020/02/JW_ISTJB_Octo-scaled.jpg) no-repeat 
+      center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+body {
+    margin: 0;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+/* Body Text */
+h1 {
+    font-size: 85px;
+    width: fit-content;
+    color: rgb(255, 234, 0);
+    font-style: italic;
+}
+
+h2 {
+    font-size: 65px;
+    font-style: italic;
+    color: rgb(255, 234, 0);
+}
+
+.home {
+    font-size: 65px;
+    width: fit-content;
+    color: rgb(255, 234, 0);
+    font-style: italic;
+}
+
+p {
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(231, 211, 240);
+}
+
+a {
+    font-size: 36px;
+    text-decoration: none;
+    color: rgb(255, 234, 0);
+    font-style: italic;
+}
+
+a:last-child {
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+a:hover {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(251, 255, 0);
+}
+
+
+/* Responsive aspect */
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 45px;
+    }
+    p {
+        font-size: 35px;
+    }
+    nav {
+        flex-direction: row;
+    }
+    a {
+        font-size: 24px;
+    }
+    a:last-child {
+        font-size: 24px;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,900);
+
+
+.content{
+  width: 850px; 
+  margin: auto;
+  margin-bottom: 350px;
+  padding: 100px 0;
+}
+
+.fixed_footer{
+  width: 100%;
+  height: 350px;
+  background: #111;
+  position: fixed; left: 0; bottom: 0;
+  z-index: -100;
+}
+   .fixed_footer p{
+    color: #696969;
+    column-count: 2;
+    column-gap: 50px;
+    font-size: 1em;
+    font-weight: 300;
+}
